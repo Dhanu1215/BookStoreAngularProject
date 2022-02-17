@@ -1,0 +1,197 @@
+.win-img {
+    height: 0.8cm;
+    width: 0.8cm;
+}
+
+a {
+    color: rgb(116, 115, 115);
+}
+
+.body {
+    display: block;
+}
+
+header {
+    font-size: large;
+}
+
+.header-content {
+    display: flex;
+    height: 1.1cm;
+    color: white;
+    text-align: left;
+    margin-left: 16%;
+    margin-top: 3%;
+    background-color: rgb(151, 7, 7);
+    width: 70%;
+    padding-top: 7px;
+    padding-left: 90px;
+    padding-bottom: 4px;
+}
+
+.input {
+    margin-left: 0.7cm;
+    width: 9cm;
+    height: 0.7cm;
+}
+
+.cart-img {
+    height: 0.6cm;
+    width: 0.6cm;
+    margin-left: 2mm;
+    border-radius: 1mm;
+}
+
+label {
+    margin-left: 5cm;
+    font-size: small;
+}
+
+.book-img {
+    height: 0.8cm;
+    width: 0.8cm;
+    border-radius: 3mm;
+}
+
+.head {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin-left: 16%;
+    border: 0.1mm solid;
+    border-color: gainsboro;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 69%;
+    margin-left: 16%;
+    margin-top: 3%;
+    border: 0.1mm solid;
+    border-color: gainsboro;
+    margin-bottom: 3%;
+}
+
+.image {
+    width: 60px;
+    height: 80px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+
+.book-name {
+    text-align: left;
+    font: normal normal normal 14px/19px Roboto;
+    font-size: medium;
+    flex-direction: row;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.author-name {
+    text-align: left;
+    font: normal normal normal 10px/13px Roboto;
+    font-size: small;
+    letter-spacing: 0px;
+    color: #878787;
+    opacity: 1;
+}
+
+.price {
+    width: 48px;
+    height: 16px;
+    text-align: left;
+    font: normal normal bold 12px/16px Roboto;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.place-button {
+    margin-left: 10cm;
+    font-size: x-small;
+    background-color: rgb(58, 143, 212);
+    font-family: sans-serif;
+    color: white;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.cont {
+    display: block;
+    width: 70%;
+    margin-top: 1%;
+    border: 0.1mm solid;
+    border-color: gainsboro;
+    margin-left: 16%;
+}
+
+.cust {
+    width: 68.5%;
+    font-size: small;
+    margin-left: 11%;
+    margin-top: 1%;
+    padding-left: 30px;
+    align-items: center;
+    color: #878787;
+    font-weight: 400;
+    border: 0.1mm solid;
+    border-color: gainsboro;
+    margin-bottom: 1%;
+}
+
+h5 {
+    margin-top: 20px;
+    padding-left: 30px;
+    align-items: center;
+    color: #878787;
+    font-weight: 400;
+    font-size: small;
+}
+
+.cont-butt {
+    margin-left: 77%;
+    margin-bottom: 4%;
+    font-size: small;
+    color: white;
+    background-color: rgb(58, 143, 212);
+    font-family: sans-serif;
+    width: 2cm;
+}
+
+.row-content {
+    border-color: gainsboro;
+}
+
+.summ {
+    margin-left: 0.7cm;
+}
+
+.check {
+    font-size: small;
+    background-color: rgb(58, 143, 212);
+    font-family: sans-serif;
+    width: 2cm;
+    margin-left: 12.5cm;
+    margin-bottom: 4%;
+    color: white;
+}

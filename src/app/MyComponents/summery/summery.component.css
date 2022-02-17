@@ -1,0 +1,145 @@
+.win-img {
+    height: 0.8cm;
+    width: 0.8cm;
+}
+
+a {
+    color: rgb(116, 115, 115);
+}
+
+.body {
+    display: block;
+}
+
+header {
+    font-size: large;
+}
+
+.header-content {
+    display: flex;
+    height: 1.1cm;
+    color: white;
+    text-align: left;
+    margin-left: 16%;
+    margin-top: 3%;
+    background-color: rgb(151, 7, 7);
+    width: 70%;
+    padding-top: 7px;
+    padding-left: 90px;
+    padding-bottom: 4px;
+}
+
+.input {
+    margin-left: 0.7cm;
+    width: 9cm;
+    height: 0.7cm;
+}
+
+.cart-img {
+    height: 0.6cm;
+    width: 0.6cm;
+    margin-left: 2mm;
+    border-radius: 1mm;
+}
+
+label {
+    margin-left: 5cm;
+    font-size: small;
+}
+
+.book-img {
+    height: 0.8cm;
+    width: 0.8cm;
+    border-radius: 3mm;
+}
+
+.head {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin-left: 16%;
+    border: 0.1mm solid;
+    border-color: gainsboro;
+}
+
+.final-head {
+    text-align: center;
+    margin-bottom: 1cm;
+    font-weight: bolder;
+}
+
+.p1 {
+    text-align: center;
+    font-size: small;
+}
+
+.p2 {
+    text-align: center;
+    font-size: small;
+}
+
+.p3 {
+    text-align: center;
+    font-size: small;
+}
+
+.pro {
+    padding-left: 2cm;
+    font-size: small;
+    font-weight: bold;
+    font-weight: 500;
+}
+
+.proo {
+    padding-left: 1.2cm;
+    font-size: small;
+    font-weight: 500;
+}
+
+.tr1 {
+    border: 0.01mm black solid;
+    height: 1cm;
+    background-color: rgba(252, 246, 246, 0.938);
+}
+
+.table {
+    margin-left: 8.1cm;
+    width: 18cm;
+    text-align: center;
+}
+
+.pr1 {
+    padding-left: 1.5cm;
+    font-size: small;
+}
+
+.pr2 {
+    padding-left: 2cm;
+    font-size: small;
+}
+
+.tr {
+    border: 0.01mm black solid;
+}
+
+.final-butt {
+    margin-left: 45%;
+    margin-bottom: 1%;
+    font-size: small;
+    background-color: rgb(58, 143, 212);
+    font-family: sans-serif;
+    color: white;
+    margin-top: 0.5cm;
+}
+
+.img {
+    height: 2.5cm;
+    width: 2.5cm;
+    margin-left: 15.7cm;
+    border-radius: 8mm;
+    margin-top: 0.6cm
+}

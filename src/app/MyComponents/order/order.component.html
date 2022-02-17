@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light height:1.2cm">
+    <img class="win-img" src="./assets/win.png">
+    <h3 class="navbar-brand navbar-red bg-light"><a class="nav-link active" routerLink="">BookStore</a></h3>
+</nav>
+
+<body class="body">
+    <div class="header-content">
+        <header>
+            <img class="book-img" src="./assets/book.png"> BookStore
+            <input class="input" type="search" placeholder="search" />
+            <label>cart</label>
+            <img class="cart-img" src="./assets/cart.png">
+        </header>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h6 class="head">Mycart</h6>
+            <div class="book" *ngFor="let item of book.data">
+                <div class="image-content">
+                    <img class="image" src={{item.book.bookImg}}>
+                    <div class="item">
+                        <span class="book-name"> {{item.book.bookName}}
+                        <div class="author-name">{{item.book.authorName}}
+                            <div class="price">Rs.{{item.book.price}}</div>
+                        </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="cust">
+            <h5>Custmor Details</h5><br>
+            <div class="row-content">
+                <input type="text" class="input" id="firstname" name="firstname" placeholder="firstname" value="firstName" [(ngModel)]='info.data.firstName' autocomplete=" off " required>
+            </div>
+            <br>
+            <div class="row-content ">
+                <input type="text " class="input " id="lastname " name="lastname " placeholder="lastname " value="lastName" [(ngModel)]='info.data.lastName' autocomplete=" off " required>
+            </div><br>
+            <div class="row-content ">
+                <input type="text " class="input " id="email " name="email " value="email" placeholder=" email " [(ngModel)]='info.data.email' autocomplete="off " required>
+            </div><br>
+            <div class="row-content ">
+                <input type="text " class="input " id="address " name="address " value="address" placeholder=" address " [(ngModel)]='info.data.address' autocomplete="off " required>
+            </div><br>
+            <button class="cont-butt " (click)="onClick(info.data) ">Continue</button>
+        </div>
+        <div class="cust ">Order Summery</div>
+    </div>
+    <app-footer>
+    </app-footer>

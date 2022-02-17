@@ -1,0 +1,198 @@
+    .win-img {
+        height: 0.8cm;
+        width: 0.8cm;
+    }
+    
+    a {
+        color: rgb(116, 115, 115);
+    }
+    
+    .body {
+        display: block;
+    }
+    
+    header {
+        font-size: large;
+    }
+    
+    .header-content {
+        display: flex;
+        height: 1.1cm;
+        color: white;
+        text-align: left;
+        margin-left: 16%;
+        margin-top: 3%;
+        background-color: rgb(151, 7, 7);
+        width: 70%;
+        padding-top: 7px;
+        padding-left: 90px;
+        padding-bottom: 4px;
+    }
+    
+    .input {
+        margin-left: 0.7cm;
+        width: 9cm;
+        height: 0.7cm;
+    }
+    
+    .cart-img {
+        height: 0.6cm;
+        width: 0.6cm;
+        margin-left: 2mm;
+        border-radius: 1mm;
+    }
+    
+    .book-img {
+        height: 0.8cm;
+        width: 0.8cm;
+        border-radius: 3mm;
+    }
+    
+    label {
+        margin-left: 5cm;
+        font-size: small;
+    }
+    
+    .books {
+        height: 4cm;
+        width: 3cm;
+        padding-top: 30px;
+    }
+    
+    .container {
+        width: 70%;
+        margin-left: 16%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .book-texts {
+        font-weight: bolder;
+        font: normal normal normal 25px/33px Roboto;
+        letter-spacing: 2px;
+        margin-left: 21%;
+        margin-top: 20px;
+    }
+    
+    .selectBox {
+        width: 161px;
+        height: 25px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #E2E2E2;
+        border-radius: 1px;
+        font-size: small;
+        margin-left: 43%;
+    }
+    
+    .add-bag {
+        background-color: rgb(151, 7, 7);
+        color: white;
+        height: 0.7cm;
+        font-size: small;
+        margin-left: 10px;
+    }
+    
+    .wish-list {
+        height: 0.7cm;
+        font-size: small;
+        margin-left: 50px;
+    }
+    
+    .item {}
+    
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 37px;
+        padding-left: 172px;
+    }
+    
+    .row-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 20px;
+        padding-bottom: 5px;
+    }
+    
+    .book {
+        width: 235px;
+        height: 275px;
+        background-color: #FFFFFF;
+        border: 1px solid #E2E2E2;
+        border-radius: 3px;
+        margin-right: 20px;
+        margin-left: 0%;
+        margin-bottom: 2%;
+        color: #FFFFFF;
+    }
+    
+    .image-content {
+        width: 235px;
+        height: 172px;
+        background-color: #FFFFFF;
+        padding-bottom: 10px;
+    }
+    
+    .book-button {
+        width: 235px;
+        height: 172px;
+        background: #F5F5F5;
+        border: none;
+        opacity: 1;
+    }
+    
+    .image {
+        width: 105px;
+        height: 135px;
+        background: transparent 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    
+    .book-name {
+        text-align: left;
+        font: normal normal normal 14px/19px Roboto;
+        flex-direction: row;
+        letter-spacing: 0px;
+        color: #0A0102;
+        opacity: 1;
+    }
+    
+    .author-name {
+        text-align: left;
+        font: normal normal normal 10px/13px Roboto;
+        letter-spacing: 0px;
+        color: #878787;
+        opacity: 1;
+    }
+    
+    .rating {
+        text-align: left;
+        width: 33px;
+        height: 16px;
+        background: #388E3C 0% 0% no-repeat padding-box;
+        border-radius: 1px;
+        opacity: 1;
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .price {
+        width: 48px;
+        height: 16px;
+        text-align: left;
+        font: normal normal bold 12px/16px Roboto;
+        letter-spacing: 0px;
+        color: #0A0102;
+        opacity: 1;
+    }
+    
+    .star {
+        padding-left: 5px;
+        padding-top: 10px;
+        font: normal normal bold 18px/20px Roboto;
+    }

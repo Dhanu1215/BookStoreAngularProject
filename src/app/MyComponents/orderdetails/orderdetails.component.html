@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light height:1.2cm">
+    <img class="win-img" src="./assets/win.png">
+    <h3 class="navbar-brand navbar-red bg-light"><a class="nav-link active" routerLink="">BookStore</a></h3>
+</nav>
+
+<body class="body">
+    <div class="header-content">
+        <header>
+            <img class="book-img" src="./assets/book.png"> BookStore
+            <input class="input" type="search" placeholder="search" />
+            <label>cart</label>
+            <img class="cart-img" src="./assets/cart.png">
+        </header>
+    </div>
+    <div class="cont">
+        <div class="content">
+            <h5 class="summ">Order Summery</h5><br>
+            <div class="book" *ngFor="let item of list.data">
+                <div class="image-content">
+                    <img class="image" src={{item.book.bookImg}}>
+                    <div class="item">
+                        <span class="book-name"> {{item.book.bookName}}
+                            <div class="author-name">{{item.book.authorName}}
+                                <div class="price">Rs.{{item.book.price}}</div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <button class="check" (click)="onClicked(user.data)">Checkout</button>
+        </div>
+    </div>
+    <app-footer>
+    </app-footer>

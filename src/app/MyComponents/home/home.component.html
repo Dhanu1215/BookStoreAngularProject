@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light height:1.2cm">
+    <img class="win-img" src="./assets/win.png">
+    <h3 class="navbar-brand navbar-red bg-light"><a class="nav-link active" routerLink="">BookStore</a></h3>
+</nav>
+
+<body class="body">
+    <div class="header-content">
+        <header>
+            <img class="book-img" src="./assets/book.png"> BookStore
+            <input class="input" type="text" placeholder="search" (click)="onSearch(bookList.bookName)" />
+            <label>cart</label>
+            <img class="cart-img" src="./assets/cart.png" (click)="viewCart()">
+        </header>
+    </div>
+    <div>
+        <div>
+            <label class="book-texts">Books </label>
+            <select class="selectBox">
+                <option>Sort By Relevance</option>
+                <option>Price:Low to High</option>
+                <option>Price:High to Low</option>
+                <option>Newest Arrivals</option>
+            </select>
+        </div>
+        <div class="container">
+            <div class="book" *ngFor="let item of bookList.data">
+                <div class="image-content">
+                    <button class="book-button">
+                <img class="image" src={{item.bookImg}}>
+            </button>
+                </div>
+                <div class="book-name row-content"> {{item.bookName}} </div>
+                <div class="author-name row-content">{{item.authorName}}</div>
+                <div class="row-content">
+                    <div class="price">Rs. {{item.price}}</div>
+                </div>
+                <div>
+                    <button class="add-bag" (click)="addToBag(item.bookId, item)">ADD TO BAG</button>
+                    <button class="wish-list">WISHLIST</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
