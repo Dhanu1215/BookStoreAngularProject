@@ -28,7 +28,7 @@ export class OrderdetailsComponent implements OnInit {
     this.service.getCartDetails().subscribe(cartData => {
       this.list = cartData;
       this.service.getUserById(this.urId).subscribe(data=> {
-          this.user = data;
+        this.user = data;
       })
     })
   }
@@ -40,11 +40,11 @@ export class OrderdetailsComponent implements OnInit {
         this.cartdata = data;
         this.order.userId = this.urId;
         this.order.address = user.address;
-         this.order.bookId = this.cartdata.data.book.bookId;
-         this.order.cartId = this.crid;
-         this.order.price = this.cartdata.data.book.price;
-         this.order.quantity = this.cartdata.data.quantity;
-         this.service.placeOrder(this.order).subscribe(data=> {
+        this.order.bookId = this.cartdata.data.book.bookId;
+        this.order.cartId = this.crid;
+        this.order.price = this.cartdata.data.book.price;
+        this.order.quantity = this.cartdata.data.quantity;
+        this.service.placeOrder(this.order).subscribe(data=> {
           this.router.navigate(["summery"]);
          });
      })

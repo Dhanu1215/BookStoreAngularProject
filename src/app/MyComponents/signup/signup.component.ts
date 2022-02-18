@@ -22,7 +22,7 @@ export class SignupComponent implements OnInit {
   onSubmit(){
     console.log(this.person);
     this.service.createUserDetails(this.person).subscribe(data =>{
-       console.log(data);
+      console.log(data);
      });
   }
 }

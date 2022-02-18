@@ -34,7 +34,7 @@ export class CartdetailsComponent implements OnInit {
   getCart(){
     this.service.getCartDetails().subscribe(data=> {
       this.book=data;
-  })
+    })
   }
 
   //Function call to  update quantity in cart.

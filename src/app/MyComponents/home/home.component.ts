@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
         if(this.searchbook == element.bookName){
           this.bookList = element;
         }
-    });
+      });
     }
   }
  
