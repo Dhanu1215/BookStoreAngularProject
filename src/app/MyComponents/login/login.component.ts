@@ -33,6 +33,7 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  //Function call to navigate on other page.
   onClick(){
     this.router.navigate(["signup"]);
   }

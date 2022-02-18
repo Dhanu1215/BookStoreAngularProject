@@ -18,6 +18,7 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Function call to create user.
   onSubmit(){
     console.log(this.person);
     this.service.createUserDetails(this.person).subscribe(data =>{

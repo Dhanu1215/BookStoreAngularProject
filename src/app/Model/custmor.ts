@@ -1,3 +1,4 @@
+
 // Custmor: Data transfer object. 
 export class Custmor{
     firstName : String;

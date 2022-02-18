@@ -33,19 +33,17 @@ export class OrderdetailsComponent implements OnInit {
     })
   }
 
-
+  //Function call to place order.
   onClicked(user:any){  
     console.log(this.crid);
      this.service.getCartById(this.crid).subscribe((data:any)=> {
         this.cartdata = data;
-        //console.log(this.cartdata.data);
         this.order.userId = this.urId;
         this.order.address = user.address;
          this.order.bookId = this.cartdata.data.book.bookId;
          this.order.cartId = this.crid;
          this.order.price = this.cartdata.data.book.price;
          this.order.quantity = this.cartdata.data.quantity;
-         //console.log(this.order);
          this.service.placeOrder(this.order).subscribe(data=> {
           this.router.navigate(["summery"]);
          });
