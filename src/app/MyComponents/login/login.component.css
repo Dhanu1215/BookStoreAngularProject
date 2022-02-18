@@ -24,3 +24,9 @@ h2 {
     height: 10cm;
     border: 3px solid #979494;
 }
+
+.btn2 {
+    margin-left: 4cm;
+    border-radius: 1mm;
+    height: 1cm;
+}

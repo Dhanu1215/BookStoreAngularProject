@@ -22,7 +22,6 @@ export class OrderComponent implements OnInit {
   cartID: number = this.route.snapshot.params["crID"];
 
   ngOnInit(): void {
-  
       //Function call to get cart details.
       this.service.getCartDetails().subscribe(data=> {
         this.book = data;    

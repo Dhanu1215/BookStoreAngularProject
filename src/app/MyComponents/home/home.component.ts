@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
   bookList: any;
   details: any;
   list = new List(0,0,0,0);
+  searchbook: any;
+
 
   constructor(private router: Router, private serv: BookserviceService, private route: ActivatedRoute ) { }
 
@@ -22,10 +24,10 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
       //Function call to get all book details.
-      this.serv.getAllBooks().subscribe(bookdata => {
-        this.bookList = bookdata ;   
+        this.serv.getAllBooks().subscribe((bookdata:any) => {
+          this.bookList = bookdata.data ;
       });
-    } 
+    }
 
     //Function call to navigate on cart page.
     viewCart(){
@@ -42,9 +44,14 @@ export class HomeComponent implements OnInit {
         });
     }
 
-    onSearch(bookName: String){
-      this.serv.getBookByName(bookName).subscribe(data => {
-      })
+    //Function call to search book by ites name
+    onSearch(){
+      console.log(this.searchbook);
+      this.bookList.forEach((element: { bookName: any; }) => {
+        if(this.searchbook == element.bookName){
+          this.bookList = element;
+        }
+    });
     }
   }
  

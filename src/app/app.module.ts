@@ -12,6 +12,8 @@ import { FooterComponent } from './MyComponents/footer/footer.component';
 import { OrderComponent } from './MyComponents/order/order.component';
 import { OrderdetailsComponent } from './MyComponents/orderdetails/orderdetails.component';
 import { SummeryComponent } from './MyComponents/summery/summery.component';
+import { SignupComponent } from './MyComponents/signup/signup.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SummeryComponent } from './MyComponents/summery/summery.component';
     CartdetailsComponent,
     OrderComponent,
     OrderdetailsComponent,
-    SummeryComponent
+    SummeryComponent,
+    SignupComponent,
+ 
   ],
   imports: [
     BrowserModule,
