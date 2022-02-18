@@ -37,7 +37,7 @@ export class CartdetailsComponent implements OnInit {
   })
   }
 
-  //Function call to update quantity in DB.
+  //Function call to  update quantity in cart.
   onAdd(item:any){
        item.quantity =  ((item.quantity) + 1);  
        this.list.bookId = item.book.bookId;
@@ -50,7 +50,7 @@ export class CartdetailsComponent implements OnInit {
        })  
   }
 
-  //Function call to get id's and navigate on other page
+  //Function call to get id and navigate on other page.
   onClick(){   
     this.no = this.book.data;
     console.log(this.no);
@@ -62,7 +62,7 @@ export class CartdetailsComponent implements OnInit {
     }); 
   }
 
-  //Function call to get id's and navigate on other page
+  //Function call to update quantity in cart.
   onMinus(item:any){
     item.quantity =  ((item.quantity) - 1);  
     this.list.bookId = item.book.bookId;

@@ -25,8 +25,8 @@ export class CartComponent implements OnInit {
         this.bkList = this.book.data;
     })
   }
-  
-  // Function call to navigate other page
+
+  // Function call to navigate on other page
   cartDetails(){
       this.router.navigate(["cartdetails"]);
       this.router.navigate(["cartdetails",this.id]);
